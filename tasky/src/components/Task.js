@@ -3,7 +3,10 @@ import React from 'react';
 const Task = (props) => {
 
     return (
-        <p>This is a task!</p>
+        <div>
+            <p>{props.title}</p>
+            <p>Due: {props.deadline}</p>
+        </div>
     )
 }
 
