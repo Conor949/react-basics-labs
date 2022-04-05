@@ -12,7 +12,9 @@ function App() {
       { id: 5, title: "Cut Grass", deadline: "Today", done: false}
     ]
   });
-
+  <button onClick={props.markDone}>Done</button>
+  <button onClick={props.markDone} className='doneButton'>Done</button>
+  
   const doneHandler = (taskIndex) => {
     const tasks = [...taskState.tasks];
     tasks[taskIndex].done = !tasks[taskIndex].done;
@@ -33,9 +35,9 @@ function App() {
     />
   ))} 
     </div>
+    
   );
-  <button onClick={props.markDone}>Done</button>
-  <button onClick={props.markDone} className='doneButton'>Done</button>
+  
 }
 
 export default App;
