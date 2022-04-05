@@ -37,6 +37,5 @@ function App() {
     
   );
 }
-<button onClick={props.markDone}>Done</button>,
-<button onClick={props.markDone} className='doneButton'>Done</button>
+<button onClick={props.markDone}>Done</button>
 export default App;
