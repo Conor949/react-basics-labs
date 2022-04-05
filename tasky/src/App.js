@@ -12,8 +12,6 @@ function App() {
       { id: 5, title: "Cut Grass", deadline: "Today", done: false}
     ]
   });
-<button onClick={props.markDone} className='doneButton'>Done</button>
-
 
   const doneHandler = (taskIndex) => {
     const tasks = [...taskState.tasks];
@@ -21,8 +19,8 @@ function App() {
     setTaskState({tasks});
     console.log(`${taskIndex} ${tasks[taskIndex].done}`);
   }
- 
-  return (
+  
+   return (
     <div className="container">
       <h1>Tasky</h1>
       {taskState.tasks.map((task, index) => (              
@@ -31,7 +29,6 @@ function App() {
       description={task.description}
       deadline={task.deadline}
       key={task.id}
-      done={task.done}
       markDone={() => doneHandler(index)}
     />
   ))} 
