@@ -11,8 +11,6 @@ function App() {
       { id: 4, title: "Hoover", deadline: "Today", done: false},
       { id: 5, title: "Cut Grass", deadline: "Today", done: false}
     ]
-    <button onClick={props.markDone}>Done</button>
-    <button onClick={props.markDone} className='doneButton'>Done</button>
   });
 
   const doneHandler = (taskIndex) => {
