@@ -30,12 +30,14 @@ function App() {
       deadline={task.deadline}
       key={task.id}
       markDone={() => doneHandler(index)}
+      
     />
   ))} 
     </div>
     
   );
-  
+  <button onClick={props.markDone}>Done</button>,
+  <button onClick={props.markDone} className='doneButton'>Done</button>
 }
 
 export default App;
